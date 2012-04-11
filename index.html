@@ -1,0 +1,29 @@
+<script type="text/javascript">
+
+// 文字列 数値
+var name = 'kozo yamagata';
+var age  = 26;
+
+// 配列 array      0         1
+var fruits = ['apple', 'banana'];
+fruits[0] // => 'apple'
+
+// オブジェクト 連想配列 ハッシュ(hash)
+var family = {father:'hideaki', mother: 'mikie'};
+family.father // => 'hideaki'
+family['father'] // => 'hideaki'
+
+// 関数 function
+var prefix = 'Hi!';
+function hello(name) {
+  return prefix + 'hello ' + name;
+}
+hello('kozo'); // => 'Hi! hello kozo'
+console.log(prefix); // => error!
+
+var hello = function(name) {
+  console.log('hello' + name);
+};
+hello('kozo'); // => console.log('hello kozo');
+
+</script>

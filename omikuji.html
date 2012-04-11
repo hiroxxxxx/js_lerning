@@ -1,0 +1,24 @@
+<script type="text/javascript">
+function omikuji() {
+  //            0     1     2    3     4
+  var items = ['吉', '中吉', '大吉', '凶', '大凶'];
+
+  // Math.random()
+  // 返り値： 0~9の範囲の浮動小数点数(float)
+  var number = Math.random() * items.length;
+      number = Math.floor(number);
+  alert(items[number]);
+}
+
+// ページの読み込みが完了したら、ボタンを取得して動作を割り当てる
+// DOMの構築が完了したら ...
+// (JS => DOM) => HTML
+window.onload = function() {
+
+  var btn = document.getElementById('btn-omikuji');
+  btn.addEventListener('click', omikuji);
+
+};
+</script>
+
+<input id="btn-omikuji" type="button" value="おみくじ" />
